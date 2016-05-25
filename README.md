@@ -1,4 +1,4 @@
-# Creating SCORM Compliant Content
+# Creating SCORM Compliant Content with Hype
 
 ## Modify Hype Course
 
