@@ -1,0 +1,270 @@
+/* Copyright � 2011 Rustici Software, LLC  All Rights Reserved. */
+
+/* Cascading Style Sheet for Rustici Software Assessment Engine
+
+   - Contains class selectors (.) and id selectors (#) which
+     are assigned to elements while created within assignment.js
+
+   - Sample settings are given, feel free to change them  */
+
+
+html,
+body {
+	height: 100%;
+	background-color: white;
+	color: black;
+}
+
+/* DIV which holds the entire asssessment rendered by the assessment engine */
+#assessment
+{
+	font-family: arial;
+	padding: 0px;
+	padding-bottom: 15px;
+	margin-bottom: 10px;
+}
+
+#assessmentSection
+{
+	padding: 20px;
+	font-size: 22px;
+}
+
+/* DIV which holds the Splash Screen */
+#splashscreen
+{
+	font-family: arial;
+	text-align: center;
+	padding: 5px;
+	padding-bottom: 15px;
+	margin-bottom: 10px;
+}
+
+#splashscreen #startbutton
+{
+	background-color: #8bc449;
+	font-size:24px;
+	font-weight: bold;
+	color:black;
+	text-decoration:none;
+	display:block;
+	width:250px;
+	padding:10px;
+	border:1px solid #7eb83c;
+	text-align:center;
+	margin: 20px auto;
+	cursor: pointer;
+
+	-moz-border-radius:2px;
+	-webkit-border-radius:2px;
+	-o-border-radius:2px;
+	border-radius:2px;
+}
+
+/* DIV that holds the title */
+#title
+{
+	font-family: arial;
+	font-size: 24px;
+
+	padding-top: 20px;
+	padding-left: 25px;
+
+	background: #009fe3;
+	color: white;
+	height: 50px;
+}
+
+#controlSection
+{
+	padding: 0;
+}
+
+/* Table that holds the previous/next/exit buttons. */
+#controls
+{
+	margin-top: 8px;
+	width: 98%;
+	text-align: center;
+}
+
+/* Table cells that holds the prev/next buttons as well as the question count */
+#controls td
+{
+	vertical-align: top;
+	width: 25%;
+}
+
+#prevButton , #nextButton
+{
+	background-color: #8bc449;
+	font-size:14px;
+	font-weight: bold;
+	color:black;
+	text-decoration:none;
+	display:block;
+	padding:10px;
+	border:1px solid #7eb83c;
+	text-align:center;
+	margin: auto;
+	cursor: pointer;
+
+	-moz-border-radius:2px;
+	-webkit-border-radius:2px;
+	-o-border-radius:2px;
+	border-radius:2px;
+}
+
+/* Selector for the input buttons which include "prev", "next", and "exit" */
+input.btn
+{
+   cursor: hand;
+}
+
+/* "question 1 of 10" type text shown in the controls div */
+#questionCount
+{
+	text-align: center;
+	width: 100%;
+	color: Blue;
+	font-family: arial;
+	vertical-align: top;
+}
+
+/* DIV that surrounds each entire question/answers grouping */
+.question
+{
+	margin-top: 12px;
+}
+
+/* DIV that holds each question */
+.questionText
+{
+	margin-bottom: 15px;
+}
+
+/* DIV that surrounds all answers to a single question */
+.answers
+{
+	margin-left: 10px;
+}
+
+/* Class that wraps each answer */
+.answer
+{
+	font-size: 16px;
+	padding: 10px;
+}
+
+.answer span {
+	cursor: pointer;
+}
+
+/* Class that wraps each user response section that starts with "You answered" */
+.userResponseSection
+{
+	margin-top: 8px;
+	margin-bottom: 8px;
+	margin-left: 20px;
+}
+
+/* Class that wraps the actual user response, or set of user responses */
+.userResponse
+{
+	font-weight: bold;
+}
+
+/* Class that wraps each correct response section that starts with "Correct answer" */
+.correctResponseSection
+{
+	margin-top: 8px;
+	margin-bottom: 8px;
+	margin-left: 20px;
+	color: green;
+}
+
+/* Class that wraps the correct response, or set of correct responses */
+.correctResponse
+{
+	font-weight: bold;
+}
+
+/* Class applied to the number of choices clause when applicable, ex: [Choose 2] */
+.numOfCorrectChoices
+{
+	margin-top: 4px;
+	font-size: x-small;
+}
+
+
+/* DIV that holds the final results which are a rendering of the resultsTemplate text */
+#finalReport
+{
+	font-size: 22px;
+	text-align: center;
+}
+
+/* DIV that surrounds the entire explanation section on the final page */
+#explanations
+{
+	font-size: small;
+	color: #000;
+}
+
+/* Class assigned to the explanation paragraph assigned to each question */
+.explanationText
+{
+	margin-top: 4px;
+	padding-left: 20px;
+	color: Navy;
+}
+
+/* Class applies to the complete question/answer/explanation grouping for a correct answer */
+.correctQuestion
+{
+	margin: 6px;
+	padding: 4px;
+	background-color: White;
+	border-radius: 2px;
+}
+
+/* Class applies to the complete question/answer/explanation grouping for an incorrect answer */
+.incorrectQuestion
+{
+	margin: 6px;
+	padding: 4px;
+	background-color: white;
+	border: 1px solid red;
+	border-radius: 2px;
+}
+
+/* Class applies to the complete question/answer/explanation grouping for an ungraded answer */
+.notGradedQuestion
+{
+	margin: 6px;
+	padding: 4px;
+	background-color: White;
+}
+
+/* Class given to the word "correct" in the context of the explanations */
+.correct
+{
+	font-weight: bold;
+	font-style: italic;
+	color: Green;
+}
+
+/* Class given to the word "incorrect" in the context of the explanations */
+.incorrect
+{
+	font-weight: bold;
+	font-style: italic;
+	color: Red;
+}
+
+/* Selector given to the countdown timer of a timed test */
+#timerCountdown
+{
+	font-family: arial;
+	color: Blue;
+}

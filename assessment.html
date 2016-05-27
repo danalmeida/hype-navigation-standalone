@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+<!-- Copyright © 2011 Rustici Software, LLC  All Rights Reserved. -->
+
+<!-- 
+		 This is the basic template web page for hosting an assessment.  You
+		 may add additional html to this page, but the script includes, body
+		 onload and form (id=assessment) must remain.  The assessment form is
+		 the area in which the assessment is rendered. 
+-->
+<head>
+	<script src="scormassessment/json2.js"></script>
+	<script src="scormassessment/jquery.js"></script>
+	<script src="scormassessment/assessment-json.js"></script>
+	<script src="scormassessment/plugins.js"></script>
+	<script>
+	function resizeHandler() {    
+			if (navigator.appName.indexOf("Explorer") < 1) {
+				 document.getElementById('controlSection').style.top=document.body.clientHeight - 80;
+			} else {
+					 document.getElementById('controlSection').style.top=document.body.clientHeight - 60;
+			}
+			document.getElementById('controlSection').style.left=0;
+	}
+
+	function doScroll() {
+		//  if(document.getElementById('title').style.top==0)
+		//  {
+		//    document.getElementById('controlSection').style.top=document.body.scrollTop+document.body.clientHeight - 60;
+		//    document.getElementById('controlSection').style.left=0;
+		//  }
+	}
+	</script>
+</head>
+<body style="margin: 0" onload="initializeAssessment('assessment.json','json'); resizeHandler();" onresize ="resizeHandler();" onscroll="doScroll();">
+	<a name="top"></a>
+	<form id="assessment"></form>
+	<div id='controlSection'>
+	</div>
+</body>
+</html>

@@ -27,16 +27,45 @@
     <link rel="stylesheet" type="text/css" href="${resourcesFolderName}/hype-navigation-styles.css" />
     ```
 
-## Download SCORM Driver
+## Download SCORM Driver Template
 
 Download the SCORM Driver template from [SCORM Cloud](https://cloud.scorm.com/sc/user/authoring/AddContent) and follow the 6 steps from the SCORM Driver Quickstart Guide:
     
 [SCORM Driver Quickstart Guide](http://scorm.com/scorm-solved/scorm-driver/scorm-driver-quickstart-guide-1-pick-version/)
 
-## Inserting Content from Hype
+## Insert Content from Hype
 
 Follow these instructions during *Step 3. Insert Content* from the SCORM Driver Quickstart Guide:
 
 1. File > Export to HTML > Folder  
 2. **Rename exported file to index.html**
 3. Save to the `scormcontent` directory
+
+## Add an Assessment
+
+1. Copy the `/scormassessment` folder and `/assessment.html` from this repository to the root directory of the SCORM Driver Template.
+2. Create an assessment in SCORM Cloud using [Quizzage](https://cloud.scorm.com/sc/user/authoring/ae/Quizzage).
+3. Select the **Rules** tab under **Settings** and update the `Total Missed Question Threshold` and `Passing Score` fields. Make any necessary changes under the **Appearance** tab.
+5. Select **Publish**, then **Export Course** to download the files.
+6. Copy `assessment.json` from the downloaded files to the root directory of your SCORM Driver Template. The course should look like this (SCORM 1.2):
+    ```markdown
+    adlcp_rootv1p2.xsd
+    ** assessment.html **
+    ** assessment.json **
+    ims_xml.xsd
+    imscp_rootv1p1p2.xsd
+    imsmanifest.xml
+    imsmd_rootv1p2p1.xsd
+    LICENSE.txt
+    metadata.xml
+    readme.txt
+    ** /scormassessment **
+    /scormcontent
+    /scormdriver
+    ScormEnginePackageProperties.xsd
+    ```
+
+7. Update the `stylesheeturl` option in `assessment.json` to use a stylesheet from the `/scormassessment/style` directory.
+    ```json
+    "stylesheeturl": "scormassessment/style/assessment-dymo.css",
+    ```
