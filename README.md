@@ -40,9 +40,9 @@ Follow these instructions during *Step 3. Insert Content* from the SCORM Driver 
 
 1. File > Export to HTML > Folder  
 2. **Rename exported file to index.html**
-3. **BlueVolt Fix**: Remove `IE=edge` from **index.html** and replace with `IE=EmulateIE8`:  
+3. Save to the `scormcontent` directory
+4. **BlueVolt Fix**: Remove `IE=edge` from **index.html** and replace with `IE=EmulateIE8`:  
     `<meta http-equiv="X-UA-Compatible" content="chrome=1,IE=EmulateIE8" />`
-4. Save to the `scormcontent` directory
 
 ## Add an Assessment
 
