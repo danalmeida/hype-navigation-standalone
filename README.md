@@ -19,7 +19,7 @@
     // REMOVE
     <script src="//learnnr.com/dist/javascript/hype-navigation.min.js"></script>
     // REPLACE WITH
-    <script src="${resourcesFolderName}t/hype-navigation-standalone.js"></script>
+    <script src="${resourcesFolderName}/hype-navigation-standalone.js"></script>
     ```
 
 3. Add `hype-navigation-styles.css` to the **Head HTML**:
