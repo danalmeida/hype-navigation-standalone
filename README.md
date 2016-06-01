@@ -23,9 +23,9 @@
     <script src="${resourcesFolderName}/hype-navigation-standalone.js"></script>
     ```
 
-3. Add `hype-navigation-styles.css` to the **Head HTML**:
+3. Add `navigation-styles.css` to the **Head HTML**:
     ```html
-    <link rel="stylesheet" type="text/css" href="${resourcesFolderName}/hype-navigation-styles.css" />
+    <link rel="stylesheet" type="text/css" href="${resourcesFolderName}/navigation-styles.css" />
     ```
 
 ## Download SCORM Driver Template
