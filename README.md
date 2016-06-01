@@ -17,9 +17,9 @@
 
 2. Upload `hype-navigation-standalone.js` to the Resources folder and replace the link the **Head HTML**. Make sure it is placed below the link to the jQuery script:
     ```html
-    // REMOVE
+    <!-- REMOVE: -->
     <script src="//learnnr.com/dist/javascript/hype-navigation.min.js"></script>
-    // REPLACE WITH
+    <!-- REPLACE WITH: -->
     <script src="${resourcesFolderName}/hype-navigation-standalone.js"></script>
     ```
 
