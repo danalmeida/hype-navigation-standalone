@@ -1,0 +1,64 @@
+<!doctype html>
+<html class="no-js" lang="en-US">
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=EmulateIE8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!-- **** TITLE **** -->
+    <title>Course Title</title>
+        
+    <!-- navigation stylesheet -->
+    <link rel="stylesheet" href="navigation-styles.css">
+    
+    <!-- jQuery -->
+    <script src="//ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
+    <!-- DYMO fonts -->
+    <script src="//use.typekit.net/bgi4mpn.js"></script>
+  	<script>try{Typekit.load();}catch(e){}</script>
+  	<!-- Flash navigation script -->
+  	<script src="flash-navigation-standalone.js"></script>
+
+    <script>
+    var course_width = 950,
+    	course_height = 600,
+    	pages = [
+    		// ['SWF FILE', 'PAGE TITLE', 'TOOLTIP (Trainer Only)']
+	    	['', '', '']
+	    ];
+    </script>
+
+</head>
+<body id="flash" class="course course-dymo">
+
+	<div class="course-container"><!-- additional classes: has-assessment, trainer -->
+
+		<div id="course-wrapper">
+			<div id="course-header">
+				<div class="left">
+					<div id="course-pagination"></div>
+					<h2 id="course-title"></h2>
+				</div>
+				<div class="right"><button id="course-index-btn" class="icon-menu--before">Index</button></div>
+			</div>
+			<div id="course-loader">
+				<div id="course-content">
+					<span id="course-load-animation">
+						<span class="spinner"><span class="bounce1"></span><span class="bounce2"></span><span class="bounce3"></span></span>
+					</span>
+				</div>
+				<div id="course-index"></div>
+			</div>
+			<div id="course-nav">
+				<button id="course-prev">&larr; previous page</button>
+				<button id="course-next">next page &rarr;</button>
+			</div>
+			<div id="course-tip">
+				<div id="course-tip-content"></div>
+			</div>
+		</div>
+
+	</div>
+
+</body>
+</html>
